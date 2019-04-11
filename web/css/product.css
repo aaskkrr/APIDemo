@@ -1,0 +1,249 @@
+body {
+    font-family:"Droid Sans",sans-serif;
+    font-size:11px;
+    color:#333;
+    background-color:#999;
+    overflow:hidden
+}
+h1,
+h2{
+    font-family:"Montserrat",sans-serif
+}
+div#Body {
+    bottom:0;
+    left:0;
+    padding-left:0;
+    position:absolute;
+    right:0;
+    top:0
+}
+div#Page {
+    display:block;
+    background-color:#fcfcfc;
+    margin:0 auto;
+    overflow:hidden;
+    position:relative;
+    border-color:#333;
+    border-style:none solid;
+    border-width:0 1px !important;
+    margin-bottom:0 !important;
+    margin-top:0 !important;
+    height:100% !important;
+    min-height:500px
+}
+div#Page.landscape {
+    width:97%;
+    min-width:1100px
+}
+div#Page.portrait {
+    width:850px
+}
+div#Page TopBar{
+    display:block;
+    height:50px;
+    position:absolute;
+    top:0;
+    width:100%
+}
+div#Page div#Main {
+    display:block;
+    top:50px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0
+}
+div#Page div#Main div#Top {
+    position:absolute;
+     height: 20px !important;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    overflow: hidden;
+    transition:height 0.5s, top 0.5s, bottom 0.5s;
+    top:0;
+    left:0;
+    right:0;
+    width:auto;
+    margin:0 30px;
+}
+
+
+div#Page div#Main div#Bottom {
+    display: flex !important;
+
+flex-direction: row;
+
+top: 20px;
+
+bottom: 30px !important;
+
+height: auto !important;
+
+overflow: hidden;
+    position:absolute;
+    transition:height 0.5s, top 0.5s, bottom 0.5s;
+    left:0;
+    right:0;
+    width:auto;
+    margin:0 30px
+}
+
+.main-right {
+    flex:1 1 auto;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden
+}
+
+.main-left {
+
+    flex: 0 0 25%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content minmax(50px, max-content) minmax(300px, auto);
+    row-gap: 10px;
+    padding-right: 4px;
+    margin-right: 10px;
+    overflow: hidden;
+    min-width: 300px;
+
+}
+.prodPicStyle{
+    display: block;
+
+    position: relative;
+
+    height: 400px;
+
+    background-position: 50% 50%;
+
+    background-size: contain;
+}
+
+.colour-palette-table {
+ border-collapse:separate;
+ border-radius:.25rem;
+ border-spacing:3px;
+ max-width:800px;
+ table-layout:fixed;
+ width:100%;
+  display:block;
+ text-decoration:none;
+}
+
+.colour-palette-table td {
+ background-clip:padding-box;
+ border:1px solid #ccc;
+  height:20px;
+  width:20px;
+ overflow:hidden;
+ position:relative;
+ text-align:center;
+}
+
+td.highlight{
+     cursor: pointer;
+ }
+ .prevPrice{
+     height: 19px;
+
+width: 150px;
+
+color: blueviolet;
+
+font-style: normal;
+
+font-size: large;
+ }
+ .curPrice{
+     height: 20px;
+
+width: 150px;
+
+font-size: x-large;
+
+font-style: normal;
+
+color: darkgreen;
+ }
+ 
+ .saving{
+     height: 20px;
+
+width: 150px;
+
+font-size: xx-large;
+
+font-style: oblique;
+
+color: crimson;
+ }
+ 
+ .main-right .main-and-tabs {
+ display:flex;
+ flex-direction:row;
+ flex:1 1 auto;
+ overflow:hidden
+}
+.main-right .main-and-tabs .main-view {
+ flex:1 1 auto;
+ border:1px solid #ccc
+}
+
+.action-button{
+    display:block;
+    position:relative;
+}
+
+.main-right .main-and-tabs .main-tab-bar {
+ display:flex;
+ flex-direction:column;
+ flex:0 0 40px;
+ overflow:hidden;
+ margin-left:-1px
+}
+.main-right .main-and-tabs .main-tab-bar label:last-child .tab {
+ border-bottom-right-radius:4px
+}
+.main-right .main-and-tabs .main-tab-bar label input {
+ display:none
+}
+.main-right .main-and-tabs .main-tab-bar label input:checked ~ span {
+ color:#3c5271;
+ box-shadow:-1px -3px 3px rgba(51,51,51,0.1),-1px 3px 3px rgba(51,51,51,0.1);
+ z-index:3;
+ background-color:#fcfcfc !important;
+ border-left:none
+}
+.main-right .main-and-tabs .main-tab-bar label input:checked ~ span .icon {
+ transition:none !important
+}
+.main-right .main-and-tabs .main-tab-bar label .tab {
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ width:100%;
+ padding:8px 0;
+ border:1px solid #ccc;
+ border-top:none;
+ cursor:pointer;
+ background-color:#f3f3f3;
+ transition:background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+ will-change:background-color, box-shadow;
+ position:relative;
+ z-index:1
+}
+.main-right .main-and-tabs .main-tab-bar label .tab.tab-action {
+ background-color:#f9ddcf
+}
+.main-right .main-and-tabs .main-tab-bar label .tab:hover {
+ background-color:#ecf5ff
+}
+.main-right .main-and-tabs .main-tab-bar label .tab .label {
+ writing-mode:vertical-rl;
+ text-orientation:upright;
+ text-align:center;
+ font-family:"Montserrat", sans-serif;
+ user-select:none;
+ }

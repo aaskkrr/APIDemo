@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Product API</title>
+        <link rel="stylesheet" type="text/css" href="css/product.css" />
+        <script type="text/javascript" src="js/APILoad.js"></script>
+    </head>
+    <body>
+        <div id="Body">
+            <div id="Page" class="portrait">
+                <div>
+                    <ul class="TopBar">
+                        <li class="">
+
+                        </li>
+                    </ul>
+                </div>
+                <div id="Main">
+                    <div id="Top"><!--intentionally empty - have to add--></div>
+                    <div id="Bottom">
+                        <div class="main-left">
+                            <div id="data-prod-image" class="prodPicStyle" style=""></div>
+                             <button class="action-button" id="add-to-cart-bttn">Add to cart</button> 
+                        </div>
+                        <div class="main-right">
+                            <h1 id="data-brand"></h1>
+                            <h2 id='data-product-name'></h2>
+                            <div style="height:90px;"><div class="prevPrice"> <span>PP :£</span><span id="data-prev-price" >0.00</span></div>
+                                <div class="curPrice"> <span>CP :£</span><span id="data-cur-price">0.00</span> </div>
+                                <div class="saving"> <span>S :£</span><span id="data-saving-price">0.00</span> </div></div>
+                            <div id='data-color-list'>
+                                <span>Selected Color:<span id='data-prod-color'></span></span>
+                                <table class="colour-palette-table" id="tableColourPalette">
+                                    <thead>
+                                    </thead>
+                                    <tbody>
+                                        <tr id='data-color-row'></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>
+                                <span>Selected Size</span>
+                                <div id="data-size-list">
+                                    <select id="data-size-combo">
+                                        <option value="" selected>--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <span>Selected Qty</span>
+                                <div>
+                                    <select id="data-qty-combo">
+                                        <option value="" selected>--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="main-and-tabs">
+                                <div class="main-view" data-asw-target="MAIN_VIEW">
+                                    <div id="main-tabs" class="main-tab-bar">
+                                        <label class="main-tab-action">
+                                            <input type="radio" name="maintabs">
+                                            <span class="tab tab-action">
+                                                <span class="pi">Product Information</span>
+                                            </span>
+                                        </label>
+                                        <label title="ItemDetails">
+                                            <input type="radio" name="maintabs">
+                                            <span class="tab tab-summary">
+                                                <span class="itemDet">Item Details</span>
+                                            </span>
+                                        </label>
+                                        <label title="FitAndStyle">
+                                            <input type="radio" name="maintabs">
+                                            <span class="tab">
+                                                <span class="FS">Fit & Style</span>													
+                                            </span>
+                                        </label>
+                                        <label title="CareComposition">
+                                            <input type="radio" name="maintabs">
+                                            <span class="tab">
+                                                <span class="CC">Care and Composition</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </body>
+                        </html>
