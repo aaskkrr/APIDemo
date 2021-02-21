@@ -5,6 +5,8 @@
  */
 package com.java.servlet;
 
+import com.java.module.Agreement;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -26,6 +28,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "ProductServlet", urlPatterns = {"/ProductServlet/*"})
 public class ProductServlet extends HttpServlet {
 
+    Agreement agreementObj;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
